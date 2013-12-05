@@ -1,0 +1,24 @@
+---
+build_environment:
+
+  build_directory: /tmp/release_automation/test_build_dir
+
+  git_branch: automation_testing
+
+  repositories:
+
+    foundation:
+      uri: git@github.com:ua-eas/katt-kc3.1.1-foundation.git
+      name: katt-kc3.1.1-foundation
+
+    ua:
+      uri: git@github.com:ua-eas/katt-kc3.1.1-ua.git
+      name: katt-kc3.1.1-ua
+
+    rice:
+      uri: git@github.com:ua-eas/katt-kc3.1.1-rice1.0.3.3-ua.git
+      name: katt-kc3.1.1-rice1.0.3.3-ua
+
+    database_updates:
+      uri: git@github.com:ua-eas/katt-kc3.1.1-cfg-dbs.git
+      name: katt-kc3.1.1-database-updates

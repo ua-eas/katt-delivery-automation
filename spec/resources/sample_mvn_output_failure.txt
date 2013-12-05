@@ -1,0 +1,65 @@
+[INFO] 64K downloaded  (hibernate-commons-annotations-3.0.0.ga.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/apache/cxf/cxf-tools-common/2.2.9/cxf-tools-common-2.2.9.jar
+Downloading: http://nexus.kuali.org/content/groups/public/org/springframework/spring-context-support/2.5.6/spring-context-support-2.5.6.jar
+Downloading: http://nexus.kuali.org/content/groups/public/org/hibernate/hibernate-validator/3.0.0.ga/hibernate-validator-3.0.0.ga.jar
+59K downloaded  (hibernate-validator-3.0.0.ga.jar)
+155K downloaded  (cxf-tools-common-2.2.9.jar)
+94K downloaded  (spring-context-support-2.5.6.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/apache/cxf/cxf-rt-databinding-jaxb/2.2.9/cxf-rt-databinding-jaxb-2.2.9.jar
+Downloading: http://nexus.kuali.org/content/groups/public/org/springframework/spring-jdbc/2.5.6/spring-jdbc-2.5.6.jar
+89K downloaded  (cxf-rt-databinding-jaxb-2.2.9.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/apache/cxf/cxf-rt-frontend-simple/2.2.9/cxf-rt-frontend-simple-2.2.9.jar
+327K downloaded  (spring-jdbc-2.5.6.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/springframework/spring-orm/2.5.6/spring-orm-2.5.6.jar
+75K downloaded  (cxf-rt-frontend-simple-2.2.9.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/apache/cxf/cxf-rt-ws-addr/2.2.9/cxf-rt-ws-addr-2.2.9.jar
+69K downloaded  (cxf-rt-ws-addr-2.2.9.jar)
+368K downloaded  (spring-orm-2.5.6.jar)
+Downloading: http://nexus.kuali.org/content/groups/public/org/apache/cxf/cxf-rt-ws-security/2.2.9/cxf-rt-ws-security-2.2.9.jar
+Downloading: http://nexus.kuali.org/content/groups/public/org/springframework/spring-webmvc/2.5.6/spring-webmvc-2.5.6.jar
+392K downloaded  (spring-webmvc-2.5.6.jar)
+308K downloaded  (cxf-rt-ws-security-2.2.9.jar)
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for opensymphony/oscache/2.3.2/oscache-2.3.2.jar - IGNORING
+Downloading: http://nexus.kuali.org/content/groups/public/opensymphony/quartz/1.6.0/quartz-1.6.0.jar
+411K downloaded  (quartz-1.6.0.jar)
+[JENKINS] Archiving /var/opt/toolkit/jenkins/jobs/mvn install rice-1.0.3.3-ua/workspace/kc-rice-1.0.3-3-ua/impl/pom.xml to /var/opt/toolkit/jenkins/jobs/mvn install rice-1.0.3.3-ua/modules/org.kuali.rice$rice-impl/builds/2012-07-30_16-26-37/archive/org.kuali.rice/rice-impl/1.0.3.3/rice-impl-1.0.3.3.pom
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Failed to resolve artifact.
+
+Missing:
+----------
+1) com.oracle:ojdbc14:jar:10.2.0.3.0
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.3.0 -Dpackaging=jar -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.3.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+  Path to dependency: 
+  	1) org.kuali.rice:rice-impl:jar:1.0.3.3
+  	2) com.oracle:ojdbc14:jar:10.2.0.3.0
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.kuali.rice:rice-impl:jar:1.0.3.3
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2),
+  kuali.nexus (http://nexus.kuali.org/content/groups/public)
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 minute 47 seconds
+[INFO] Finished at: Mon Jul 30 16:28:29 MST 2012
+[INFO] Final Memory: 57M/359M
+[INFO] ------------------------------------------------------------------------

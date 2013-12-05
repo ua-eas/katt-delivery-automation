@@ -1,0 +1,7 @@
+---
+build_directory: /tmp/automation_testing
+foundation_repo: git@github.com:joshuofa/simple-rails-app.git
+ua_repo: git@github.com:ua-eas/katt-kc3.1.1-ua.git
+database_update_repo: git@github.com:ua-eas/katt-kc3.1.1-cfg-dbs.git
+rice_repo: git@github.com:ua-eas/katt-kc3.1.1-rice1.0.3.3-ua.git
+git_branch: automation_testing
