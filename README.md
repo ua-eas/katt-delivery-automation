@@ -1,46 +1,36 @@
-# _Project_
+# Kuali Delivery Automation
 
-_Description: What does this project do and who does it serve?_
+This project is designed to replace the old build and release automation scripts with a single application responsible for automating the entire release process for our Kuali applications. 
+
 
 ## Project Setup
 
-_How do I, as a developer, start working on the project?_ 
+This project is written in Ruby and tested on Mac OSX and RedHat Linux EL5 and EL6 running Ruby 2.0.  
 
-1. _What dependencies does it have (where are they expressed) and how do I install them?_
-2. _How can I see the project working before I change anything?_
+To get this project up and running, clone it from GitHub and run bundle install to install all of the required Gems.
 
 ## Testing
 
-_How do I run the project's automated tests?_
+This project uses rspec to test. All functionality is tested via scripts in the spec directory.
 
-### Unit Tests
+### Run Unit Tests
 
 1. `rake spec`
 
-### Integration Tests
 
-1. _Run other local services / provide credentials for external services._
-2. `rake spec:integration`
+## Usage
 
-## Deploying
+### Building Kuali Applications
 
-### _How to setup the deployment environment_
+More to come...
 
-- _Required heroku addons, packages, or chef recipes._
-- _Required environment variables or credentials not included in git._
-- _Monitoring services and logging._
+### Deploying Kuali Applications
 
-### _How to deploy_
+More to come...
 
 ## Troubleshooting & Useful Tools
 
-_Examples of common tasks_
-
-> e.g.
-> 
-> - How to make curl requests while authenticated via oauth.
-> - How to monitor background jobs.
-> - How to run the app through a proxy.
+More to come...
 
 ## Contributing changes
 
