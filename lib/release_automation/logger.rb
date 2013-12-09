@@ -7,7 +7,7 @@ class ReleaseAutomation::Logger
 
   # Create a new Logger that will initially log to STDOUT. We may want to change this later.
   def initialize(logger_name)
-    
+
     @log4r_logger = Logger.new logger_name
     outputter = Outputter.stdout
     @time_formatter  = PatternFormatter.new(:pattern => "%d (%l) %m", :date_pattern => "%H:%M:%S")

@@ -1,30 +1,30 @@
 require 'spec_helper'
 
 describe ReleaseAutomation::Build do
-	
-	before :all do
-		setup_testing_build_environment
-		@build = ReleaseAutomation::Build.new
-	end
 
-	after :all do
-		cleanup_testing_build_environment
-	end	
+  before :all do
+    setup_testing_build_environment
+    @build = ReleaseAutomation::Build.new
+  end
 
-	describe "#new" do
-		it "should return a new ReleaseAutomation::Build object" do
-			@build.should be_an_instance_of ReleaseAutomation::Build
-		end
-		it "should not raise an exception" do
-			lambda { ReleaseAutomation::Build.new }.should_not raise_exception
-		end
-	end
+  after :all do
+    cleanup_testing_build_environment
+  end
 
-	describe "#create_build" do
-		it "should respond to create_build" do
-			@build.should respond_to :create_build
-		end
-	end
+  describe "#new" do
+    it "should return a new ReleaseAutomation::Build object" do
+      @build.should be_an_instance_of ReleaseAutomation::Build
+    end
+    it "should not raise an exception" do
+      lambda { ReleaseAutomation::Build.new }.should_not raise_exception
+    end
+  end
+
+  describe "#create_build" do
+    it "should respond to create_build" do
+      @build.should respond_to :create_build
+    end
+  end
 
 end
 
@@ -32,7 +32,7 @@ end
 
 
 # describe ReleaseAutomation::Build do
-	
+
 # 	before :all do
 # 		setup_testing_build_environment
 # 		@build = ReleaseAutomation::Build.new
@@ -82,7 +82,7 @@ end
 # 		it "should bump the snapshot.version in version.properties and commit changes" do
 # 			old_snashot_number = get_snapshot_version
 # 			old_commit = get_last_commit
-			
+
 # 			@build.bump_build_version
 
 # 			new_snapshot_number = get_snapshot_version
@@ -116,7 +116,7 @@ end
 # 			ua_tags.should include tag
 # 			db_tags.should include tag
 
-# 		end 
+# 		end
 # 	end
 
 # 	describe "#package_application" do

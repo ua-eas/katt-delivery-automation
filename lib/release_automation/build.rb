@@ -18,7 +18,7 @@ class ReleaseAutomation::Build
 
   end
 
-  def create_build 
+  def create_build
 
     build_preparer.prepare
     build_runner.build

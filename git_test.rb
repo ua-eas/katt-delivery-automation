@@ -12,7 +12,7 @@ class Build
   delegate :debug, :info, :warn, :error, :fatal, :log_to_stdout, to: :@logger
 
   def initialize
-  	@logger = ReleaseAutomation::Logger.new 'Build'
+    @logger = ReleaseAutomation::Logger.new 'Build'
   end
 
   def checkout_foundation_source
@@ -34,10 +34,10 @@ class Build
     FileUtils.rm_rf(repo_dir)
 
     g = Git.clone(repo_uri, repo_name, :log => @logger, :path => working_directory)
-  	info( "repo does not exist, checking out new repository" )
+    info( "repo does not exist, checking out new repository" )
 
-  	g.checkout(g.branch(branch))
-  	g.pull(g.repo, g.branches.local)
+    g.checkout(g.branch(branch))
+    g.pull(g.repo, g.branches.local)
 
   end
 end
